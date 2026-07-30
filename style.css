@@ -139,4 +139,13 @@ body.texto-maior .titulo-dica {
 
 body.texto-maior .tarja-alerta {
     font-size: 1.3rem; /* Aumenta o alerta */
+} .texto-dica, .titulo-dica {
+    cursor: pointer;
+    transition: font-size 0.2s ease;
+}
+
+/* Estilo aplicado ao clicar no texto */
+.em-destaque {
+    font-size: 1.8rem !important;
+    color: #001a38;
 }
