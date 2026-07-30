@@ -30,19 +30,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-// Aumenta a fonte da página em 2px a cada clique (limitada a 28px).
-// Se preferir um comportamento de toggle, me diga que eu troco.
-document.addEventListener('DOMContentLoaded', () => {
-  const btn = document.getElementById('btn-fonte');
-  if (!btn) return;
-
-  btn.addEventListener('click', () => {
-    const root = document.documentElement; // <html>
-    const current = parseFloat(getComputedStyle(root).fontSize) || 16;
-    const newSize = Math.min(28, current + 2); // máximo 28px
-    root.style.fontSize = newSize + 'px';
-
-    // Atualiza texto do botão com o tamanho atual (opcional)
-    btn.textContent = `🔎 Aumentar Letra (${Math.round(newSize)}px)`;
-  });
-});}
+}
